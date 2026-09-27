@@ -27,7 +27,6 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y \
           python3-pip \
-          build-essential \
           git \
           python3-dev \
           ffmpeg \
@@ -40,9 +39,7 @@ jobs:
           libavformat-dev \
           zlib1g-dev \
           libffi-dev \
-          libssl-dev \
-          zip \
-          unzip
+          libssl-dev
 
     - name: Upgrade pip and install buildozer
       run: |
