@@ -1,32 +1,17 @@
 [app]
 
-# (str) Title of your application
 title = محل صوتيات جيولوجية
-
-# (str) Package name
 package.name = geoacoustic
-
-# (str) Package domain (needed for android packaging)
 package.domain = org.geo
-
-# (str) Source files where the *.py files live
 source.dir = .
-
-# (list) Source files to include (let it empty to include all the files)
 source.include_exts = py,png,jpg,kv,atlas
-
-# (list) List of inclusions
 source.include_dirs = .
-
-# (str) Application versioning (method 1)
 version = 0.1
-
-# (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy
 requirements = python3,kivy,kivyMD
-
-# (list) Permissions
 android.permissions = INTERNET
+android.api = 31
+android.minapi = 21
 
-# (str) Supported orientations
-orientation = portrait
+[buildozer]
+log_level = 2
+warn_on_root = 1
